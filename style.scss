@@ -1,0 +1,141 @@
+
+@mixin part(){
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    font-family: 'Poppins',
+}
+body{
+    margin: 0;
+}
+
+
+.rasm{
+    background-image: url(gold.jpg);
+    height: 200px;
+    background-position: center;
+}
+
+.h1{
+        
+        font-family: inherit;
+       
+        margin: 0;
+        font-size: 40px;
+        text-align: center;
+        padding-top: 20px;
+}
+
+.p1{
+    @include part();
+    gap: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a{
+        text-decoration: none;
+        color: black;
+    font-weight: bold;
+    @media(min-width:350px) and ( max-width:450px) {
+        font-size: 13px;
+    }
+    }
+    @media(min-width:300px) and ( max-width:350px) {
+        font-size: 10px;
+    }
+   
+}
+.program{
+    @include part();
+    gap: 15px;
+}
+img{
+    width: 50%;
+}
+.div1{
+    display: flex;
+  @media(min-width:300px) and ( max-width:769px){
+    flex-direction: column;
+  }
+}
+.div2{
+    display: flex;
+    @media(min-width:300px) and ( max-width:769px){
+        flex-direction: column;
+      }
+}
+.img2{
+    height: 0%;
+}
+
+.div3{
+    display: flex;
+    @media(min-width:300px) and ( max-width:769px){
+        flex-direction: column;
+      }
+}
+
+.div4{
+    display: flex;
+    @media(min-width:300px) and ( max-width:769px){
+        flex-direction: column;
+      }
+}
+.div5{
+    background-image: url(gold.jpg);
+    height: 300px;
+    background-position: center;
+}
+.h2{
+    font-family: inherit;
+       
+    margin: 0;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 60px;
+}
+.p2{
+    text-align: center;
+    font-weight: bold;
+}
+.div6{
+    height: 80px;
+    // background-color: #faecec63;
+}
+.p3{
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+    padding-top: 28px;
+    @media(min-width:350px) and ( max-width:450px) {
+        font-size: 13px;
+    }
+}
+
+@media(min-width:300px) and ( max-width:769px){
+    img{
+       width: 100%;
+    }
+}
+
+@media(min-width:500px) and ( max-width:600px){
+    .p3{
+      font-size: 14px;
+    }
+    .h2{
+        font-size: 34px;
+    }
+
+}
+@media(min-width:300px) and ( max-width:350px){
+.p3{
+font-size: 10px;
+}
+}
+
